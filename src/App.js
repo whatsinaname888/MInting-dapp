@@ -66,9 +66,9 @@ export const ResponsiveWrapper = styled.div`
 `;
 
 export const StyledLogo = styled.img`
-  width: 200px;
+  width: 800px;
   @media (min-width: 767px) {
-    width: 300px;
+    width: 500px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -195,13 +195,23 @@ function App() {
 
   return (
     <s.Screen>
+      
+      <div>
+            <a href="https://opensea.io/collection/bobo-frens">
+            <img src="/OpenSea.png" alt="opensea"   width="60px" height="60px" style={{position:"absolute", right:"4%", paddingTop:"4px"}} />
+            </a>
+            <a href="https://etherscan.io/address/0x156BB7d800b1E0Ca53415B3aA8bcfFE319BFbF0e">
+            <img src="/etherscan.png" alt="opensea"   width="60px" height="60px" style={{position:"absolute", right:"14%",marginRight:"30px", paddingTop:"4px"}} />
+            </a>
+        </div>
+        
       <s.Container
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        <StyledLogo alt={"logo"} src={"/config/images/logo.png"}/>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -236,9 +246,7 @@ function App() {
                 color: "var(--primary-text)",
               }}
             >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </StyledLink>
+              
             </s.TextDescription>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
@@ -376,32 +384,12 @@ function App() {
               src={"/config/images/example.gif"}
               style={{ transform: "scaleX(-1)" }}
             />
+            
           </s.Container>
+        
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
-        </s.Container>
+          
       </s.Container>
     </s.Screen>
   );
