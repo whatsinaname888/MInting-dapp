@@ -195,6 +195,13 @@ function App() {
 
   return (
     <s.Screen>
+      
+      <div>
+            <img src="/PngItem_1083749.png" alt="discord" width="140" height="62.53"  style={{filter:  "brightness(0) invert(1)", position:"absolute", right:"20px",paddingBottom:"4px"} } />
+            <img src="/twitter-xxl.png" alt="twitter" width="140" height="62.53" style={{filter:  "brightness(0) invert(1)", position:"absolute", right:"13%",paddingBottom:"4px"} }/>
+            <img src="/OpenSea-Full-Logo (light).png" alt="opensea"  width="140" height="62.53" style={{position:"absolute", right:"25%",paddingBottom:"4px"}} />
+        </div>
+        
       <s.Container
         flex={1}
         ai={"center"}
