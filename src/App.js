@@ -198,10 +198,10 @@ function App() {
       
       <div>
             <a href="https://opensea.io/collection/bobo-frens">
-            <img src="/OpenSea.png" alt="opensea"   width="60px" height="60px" style={{position:"absolute", right:"4%", paddingTop:"4px"}} />
+            <img src="/OpenSea.png" alt="opensea"   width="30px" height="30px" style={{position:"absolute", right:"4%", paddingTop:"4px"}} />
             </a>
             <a href="https://etherscan.io/address/0x156BB7d800b1E0Ca53415B3aA8bcfFE319BFbF0e">
-            <img src="/etherscan.png" alt="opensea"   width="60px" height="60px" style={{position:"absolute", right:"14%",marginRight:"30px", paddingTop:"4px"}} />
+            <img src="/etherscan.png" alt="opensea"   width="30px" height="30px" style={{position:"absolute", right:"8%",marginRight:"10px", paddingTop:"4px"}} />
             </a>
         </div>
         

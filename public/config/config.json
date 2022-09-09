@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xA7387Bfadb3AfA04aFd25995687E2099bb3015c9",
-  "SCAN_LINK": "https://mumbai.polygonscan.com/address/0xa7387bfadb3afa04afd25995687e2099bb3015c9",
+  "CONTRACT_ADDRESS": "0x156BB7d800b1E0Ca53415B3aA8bcfFE319BFbF0e",
+  "SCAN_LINK": "https://etherscan.io/address/0x156BB7d800b1E0Ca53415B3aA8bcfFE319BFbF0e",
   "NETWORK": {
-    "NAME": "Mumbai",
-    "SYMBOL": "MATIC",
-    "ID": 80001
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
   },
   "NFT_NAME": "Bobo Frens",
   "SYMBOL": "BF",
   "MAX_SUPPLY": 6969,
-  "WEI_COST": 20000000000000000,
-  "DISPLAY_COST": 0.02,
+  "WEI_COST": 10000000000000000,
+  "DISPLAY_COST": 0.01,
   "GAS_LIMIT": 300000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/bobo-frens-hpnk0u4yvi",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/bobo-frens",
   "SHOW_BACKGROUND": true
 }
